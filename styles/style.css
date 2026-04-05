@@ -1,10 +1,43 @@
-   html {
-      font-size: 22px;
-    }
+  *{
+    box-sizing: border-box;
+  }
      
     body {
       background-color: #333;
       color: whitesmoke;
+      font-size: 1.5em;
+    }
+
+    main {
+      padding: 18px;
+    }
+
+    nav {
+      background-color: gold;
+      color: #333;
+    }
+
+  ul {
+    list-style-type: none;
+    text-align: right;
+    margin-right: 150px;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  li #navbar {
+    color: black ;
+  }
+
+  li #navbar:focus, #navbar:hover {
+    text-decoration: underline;
+  }
+
+
+    h1 {
+      margin: 25px 0;
     }
 
     .arabic {
@@ -26,11 +59,21 @@
       color: #333;  
       border-radius: 5px;
       padding: 10px 15px;
+      margin: 10px 0;
+    }
+
+    section {
+      width: 100%;
+      border: 2px solid gold;
+      border-radius: 2rem;
+      text-align:justify;
+      margin: auto;
+      padding: 2rem;
     }
 
     #darkModeToggle {
   position: fixed;
-  top: 20px;
+  top: 0px;
   right: 20px;
   z-index: 1000;
   padding: 10px 15px;
@@ -47,7 +90,9 @@ body.dark-mode {
   color: #333;
 }
 
-/* body.dark-mode button {
+/* body.dark-mode section {
   background-color: #222;
   color: #eee;
-} */
+  border-color: gold;
+} 
+  */
